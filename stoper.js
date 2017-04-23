@@ -1,4 +1,4 @@
-var cs, ds, sec, das, min, damin, h, dah, show, show1, show2, show3, show4, show5, show6, show7, start_stop, interv, take_time, list, reset_btn;
+var cs, ds, sec, das, min, damin, h, dah, show, start_stop, interv, take_time, list, reset_btn;
 cs = 0;
 ds = 0;
 sec = 0;
