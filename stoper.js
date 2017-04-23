@@ -1,12 +1,5 @@
 var cs, ds, sec, das, min, damin, h, dah, show, start_stop, interv, take_time, list, reset_btn;
-cs = 0;
-ds = 0;
-sec = 0;
-das = 0;
-min = 0;
-damin = 0;
-h = 0;
-dah = 0;
+cs = ds = sec = das = min = damin = h = dah = 0;
 show = document.getElementById("time");
 show.textContent = "00 : 00 : 00 : 00";
 start_stop = document.getElementById("start-btn");
@@ -21,9 +14,6 @@ function reset_content(){
     list.innerHTML = "";
     cs = ds = sec = das = min = damin = h = dah = 0;
     show.textContent = "00 : 00 : 00 : 00";
-   // for (i = 0; i <= list.children.length; i ++){
-   //     list.removeChild(list.childNodes[i - 1]);
-  //  }
 }
 
 function write_time(){
@@ -74,5 +64,4 @@ function time(){
     }
 
     show.textContent = "" + dah + h + " : " + damin + min + " : " + das + sec + " : " + ds + cs;
-
 }
