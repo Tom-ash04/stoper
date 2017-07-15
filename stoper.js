@@ -11,15 +11,22 @@ reset_btn = document.getElementById("reset-btn");
 reset_btn.onclick = function() {reset_content()};
 
 function reset_content(){
-    list.innerHTML = "";
+    list.style.opacity = "0";
+    setTimeout(function(){
+        list.innerHTML = "";
+        list.style.opacity = "";
+        }, 1000)
     cs = ds = sec = das = min = damin = h = dah = 0;
     show.textContent = "00 : 00 : 00 : 00";
+    
 }
 
 function write_time(){
     var list_el = document.createElement("li");
     list_el.textContent = show.textContent;
     list.appendChild(list_el);
+    list_el.style.height = "0px"
+    setTimeout(function(){list_el.style.height = "34px"}, 100)
 }
 
 function start(){

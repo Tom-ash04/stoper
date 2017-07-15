@@ -1,3 +1,7 @@
+body {
+    height: 100vh;
+    background: linear-gradient( green, white, green);
+}
 .container {
     width: 500px;
     background: lightgray;
@@ -6,6 +10,8 @@
     text-align: center;
     box-shadow: 0 0 10px black;
     padding-bottom: 20px;
+    transition: 1s ease;
+    margin-top:100px;
 }
 .window {
     background: white;
@@ -47,4 +53,10 @@ ol {
     font-size: 30px;
     background: white;
     border-radius: 10px;
+    transition: 1s ease;
+    overflow: hidden;
+}
+ol li {
+    transition: 1s ease;
+    
 }
