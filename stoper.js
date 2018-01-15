@@ -1,7 +1,7 @@
 var cs, ds, sec, das, min, damin, h, dah, show, start_stop, interv, take_time, list, reset_btn;
 cs = ds = sec = das = min = damin = h = dah = 0;
 show = document.getElementById("time");
-show.textContent = "00 : 00 : 00 : 00";
+show.textContent = "00:00:00:00";
 start_stop = document.getElementById("start-btn");
 start_stop.onclick = function(){start()};
 take_time = document.getElementById("time-btn");
@@ -15,9 +15,9 @@ function reset_content(){
     setTimeout(function(){
         list.innerHTML = "";
         list.style.opacity = "";
-        }, 1000)
+        }, 500)
     cs = ds = sec = das = min = damin = h = dah = 0;
-    show.textContent = "00 : 00 : 00 : 00";
+    show.textContent = "00:00:00:00";
     
 }
 
@@ -70,5 +70,5 @@ function time(){
         dah += 1;
     }
 
-    show.textContent = "" + dah + h + " : " + damin + min + " : " + das + sec + " : " + ds + cs;
+    show.textContent = "" + dah + h + ":" + damin + min + ":" + das + sec + ":" + ds + cs;
 }
